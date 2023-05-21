@@ -26,7 +26,7 @@ if ("type" in pet) {
   console.log(true);
 } else {
   console.log(false);
-};
+}
 
 //task3
 
