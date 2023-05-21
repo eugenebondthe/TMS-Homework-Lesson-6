@@ -1,6 +1,6 @@
 import { question } from "readline-sync";
 
-//task 1
+//task1
 
 const car: { brand?: string; model?: string; mileage: number } = {
   brand: "Audi",
@@ -15,7 +15,7 @@ delete car.model;
 
 console.log(car);
 
-//task 2
+//task2
 
 const pet: { type?: string; age?: number; weight?: number } = {
   type: "cat",
@@ -28,7 +28,7 @@ if ("type" in pet) {
   console.log(false);
 };
 
-//task 3
+//task3
 
 const student = {
   name: "John",
@@ -48,7 +48,7 @@ for (const value in student) {
   console.log(student[value as keyof typeof student]);
 }
 
-//task 4
+//task4
 
 const colors = {
   "ru pum pu ru rum": {
@@ -61,7 +61,7 @@ const colors = {
 console.log(colors["ru pum pu ru rum"].red);
 console.log(colors["ru pum pu ru rum"].blue);
 
-//task 5
+//task5
 
 let salaries = {
   andrey: 500,
@@ -82,7 +82,7 @@ for (const key in salaries) {
 let mediana = sum / employeeCounter;
 console.log(mediana);
 
-//task 6
+//task6
 
 const userRegLogin = question("Input unique user name\n");
 const userRegPassword = question("Input secure password:\n");
@@ -106,7 +106,7 @@ console.log(
 const userLoginInput = question("Input unique user name\n");
 const userPasswordInput = question("Input secure password:\n");
 
-//var 1
+//var1
 // function validateUserLogin (login: string, password: string, userData: typeof user): void {
 //     if(login === userData.login && password === userData.password) {
 //         console.log("Welcome to hell!");
@@ -114,7 +114,7 @@ const userPasswordInput = question("Input secure password:\n");
 // }
 // validateUserLogin(userLoginInput, userPasswordInput, user);
 
-//var 2
+//var2
 function validateUserLogin(login: string, password: string) {
   if (login === user.login && password === user.password) {
     console.log("Welcome to hell!");
@@ -125,7 +125,7 @@ function validateUserLogin(login: string, password: string) {
 
 validateUserLogin(userLoginInput, userPasswordInput);
 
-//adv task 1
+//adv task1
 
 let values: any = {
   "0": "Zero",
